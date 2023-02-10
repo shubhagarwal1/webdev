@@ -1,31 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>imagegallery</title>
+
+
+    <style>
+      .box
+      {
+          width: 25%;
+          height: 200px;
+          background-color: slateblue;
+          border: 1px solid black;
+          float: left;
+          margin: 4%;
+      }
+      img{
+        height: 100%;
+        width: 100%;
+        box-shadow: 5px 5px 15px 5px gray;
+      }
+      img:hover{
+       
+        box-shadow: 0px 0px 0px 0px;
+      }
+      h1{
+        text-align: center;
+        text-transform: uppercase;
+        color: slateblue;
+        text-shadow: 0 0 3px gray;
+      }
+</style>
+
+
+
+
 </head>
 <body>
 
-        <h1 align="center">Our Image Gallery</h1>
-        <hr>
-       <center>
-         <img src="images/4.jpg" height="200" width="200" border="3" alt="">
-         <img src="images/5.jpg" height="200" width="300" border="3" alt="">
-         <img src="images/6.jpg" height="200" width="200" border="3" alt="">
-         <img src="images/4.jpg" height="200" width="300" border="3" alt="">
-         <img src="images/5.jpg" height="200" width="300" border="3" alt="">
-         <img src="images/6.jpg" height="200" width="200" border="3" alt="">
-         <img src="images/4.jpg" height="200" width="300" border="3" alt="">
-         <img src="images/5.jpg" height="200" width="200" border="3" alt="">
-         <img src="images/6.jpg" height="200" width="300" border="3" alt="">
-         <img src="images/4.jpg" height="200" width="200" border="3" alt="">
-         <img src="images/5.jpg" height="200" width="200" border="3" alt="">
-         <img src="images/6.jpg" height="200" width="300" border="3" alt="">
-        
-        </center> 
+  <h1 align="center">Our Image Gallery</h1>
+  <hr>
 
+    <div class="box">
+      <img src="images/4.jpg">
+    </div>
+    <div class="box">
+      <img src="images/5.jpg">
+    </div>
+    <div class="box">
+      <img src="images/4.jpg">
+    </div>
+    <div class="box">
+      <img src="images/5.jpg">
+    </div>
+    <div class="box">
+      <img src="images/4.jpg">
+    </div>
+    <div class="box">
+      <img src="images/5.jpg">
+    </div>
+    
 </body>
 </html>
 
