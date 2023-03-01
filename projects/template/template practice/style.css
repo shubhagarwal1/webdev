@@ -1,0 +1,71 @@
+body{
+    margin: 0px;
+}
+.box{
+    border: 2px solid black;
+    height: 20vh;
+}
+.contant{
+    border: 2px solid black;
+    height: 60vh;
+}
+.footer{
+    border: 2px solid black;
+    height: 20vh;
+}
+.box-left{
+    height: 100%;
+    width: 20%;
+    background-color: black;
+    float: left;
+}
+.box-middle{
+    height: 100%;
+    width: 60%;
+    background-color: aqua;
+    float: left;
+    text-align: center;
+  
+}
+.box-right{
+    height: 100%;
+    width: 20%;
+    background-color: black;
+    float: left;
+}
+ul{
+    height: 3vh;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+ul  li{
+    float: left;
+    padding: 10px;
+    list-style: none;
+    text-transform: capitalize;
+    position: relative;
+    left: 210px;
+    letter-spacing: 3px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+    background-color: maroon;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contant{
+background-color: rgb(57, 47, 47);
+}
+.footer{
+background-color: rgb(64, 27, 27);
+}
+

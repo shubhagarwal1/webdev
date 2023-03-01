@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0px;
+            background-color: whitesmoke;
+        }
+
+        #header {
+            height: 60px;
+            background-color: whitesmoke;
+            padding: 0px;
+        }
+
+        #header #right {
+            height: 100%;
+            background-color: whitesmoke;
+            float: left;
+            text-align: center;
+
+        }
+
+        #header #right img {
+            height: 50%;
+            width: 30%;
+            margin-top: 15px;
+        }
+
+        #header #middle {
+            height: 100%;
+            /* background-color: blue; */
+            float: left;
+            padding-top: 10px;
+        }
+
+        #header #middle ul li {
+            list-style: none;
+            float: left;
+            margin: 10px;
+        }
+
+
+        #header #middle ul li a {
+
+            text-decoration: none;
+            color: black;
+            text-transform: capitalize;
+            font-weight: 100;
+
+        }
+
+        #header #middle ul li a:hover {
+
+            color: rgb(94, 87, 87);
+
+
+
+        }
+
+        #header #left {
+            margin-top: 20px;
+            height: 40%;
+            width: 50%;
+            /* background-color: green; */
+            float: left;
+        }
+
+        #header #left #ca {
+            height: 100%;
+
+            float: left;
+        }
+
+        #header #left #ca img {
+            height: 100%;
+        }
+
+        #header #left #cb {
+            height: 100%;
+
+            float: left;
+        }
+
+        #header #left #cb img {
+            height: 100%;
+        }
+
+        #header #left #cc {
+            height: 100%;
+
+            float: left;
+        }
+
+        #header #left #cc img {
+            height: 100%;
+        }
+
+        #header #left #cd {
+            height: 100%;
+
+            float: left;
+        }
+
+        #header #left #cd img {
+            height: 100%;
+        }
+
+
+        #content {
+            margin-top: 20px;
+            height: 700px;
+            /* background-color: black; */
+            padding: 0px;
+        }
+
+        #content #left {
+            height: 100%;
+            /* background-color: red; */
+            float: left;
+
+        }
+
+        #content #middle {
+            height: 100%;
+            /* background-color: green; */
+            float: left;
+        }
+
+        #content #right {
+            height: 100%;
+            /* background-color: blue; */
+            float: left;
+        }
+
+        #content #la {
+            height: 100%;
+            /* background-color: slateblue; */
+            float: left;
+        }
+
+        #content #al {
+            height: 50%;
+            /* background-color: orange; */
+            float: left;
+            overflow: scroll;
+            text-transform: capitalize;
+        }
+
+        #content li {
+            list-style: square;
+            ;
+        }
+
+        #content h6 {
+            text-align: left;
+            text-transform: capitalize;
+            margin-top: 10px;
+
+        }
+
+        #content a {
+            text-decoration: none;
+            color: gray;
+            text-transform: capitalize;
+            font-size: 10px;
+
+        }
+
+        #content a:hover {
+            color: rgb(94, 87, 87);
+
+        }
+
+
+        #middle #centera {
+            height: 100%;
+            /* background-color: orange; */
+
+        }
+
+        #middle #centera #ca {
+            height: 30%;
+            /* background-color: red; */
+        }
+
+
+
+        #middle #centera #cb {
+            height: 70%;
+            /* background-color: purple; */
+        }
+
+
+        #middle #centera #ca img {
+            margin-top: 10px;
+            height: 20%;
+        }
+
+        #middle #centera #ca #last {
+            padding: 10px;
+            height: 100%;
+        }
+
+        #fa {
+            height: 20%;
+            /* background-color: yellow; */
+        }
+
+        #fb {
+            height: 40%;
+            /* background-color: green; */
+        }
+
+        #fc {
+            height: 40%;
+            /* background-color: blue; */
+        }
+
+        #fa img {
+            margin-top: 10px;
+            height: 30%;
+        }
+
+        f {
+            font-size: 12px;
+            text-transform: capitalize;
+            color: skyblue;
+
+        }
+
+        e {
+            font-size: 10px;
+            text-transform: capitalize;
+            color: rgb(94, 87, 87);
+        }
+
+        #fb img {
+            height: 100%;
+            width: 100%;
+        }
+
+
+        #fc {
+            padding: 10px;
+            text-align: justify;
+            text-transform: capitalize;
+            font-family: sans-serif;
+            color: rgb(94, 87, 87);
+            font-size: 10px;
+        }
+#right h4{
+    text-transform: capitalize;
+}
+
+#centera{
+    background-color: white;
+}
+
+    </style>
+    <title>Media template</title>
+</head>
+
+<body>
+
+
+    <div id="header" class="col-md-12">
+
+        <!-- logo -->
+        <div id="right" class="col-md-2">
+            <img src="icons/logo.png">
+        </div>
+
+        <!-- navbar -->
+        <div id="middle" class="col-md-6">
+
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">timeline</a></li>
+                <li><a href="">account settings</a></li>
+                <li><a href="">more pages</a></li>
+            </ul>
+        </div>
+
+        <!-- navbar2 -->
+        <div id="left" class="col-md-4">
+
+            <div id="ca" class="col-md-2">
+
+                <a href=""> <img src="icons/search.png"></a>
+            </div>
+
+            <div id="cb" class="col-md-2">
+                <a href=""> <img src="icons/home.png"></a>
+            </div>
+
+            <div id="cc" class="col-md-2">
+                <a href=""><img src="icons/messages.png"></a>
+            </div>
+
+            <div id="cd" class="col-md-2">
+                <a href=""> <img src="icons/notification.png"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- content part begins -->
+
+
+    <!-- left side portion -->
+    <div id="content" class="col-md-12">
+
+        <div id="left" class="col-md-3">
+            <div id="la" class="container">
+                <div id="al" class="col-md-12">
+                    <h6>shortcuts</h6>
+                    <hr>
+
+                    <ul>
+                        <a href="">
+                            <li>news feed</li>
+                        </a> <br>
+                        <a href="">
+                            <li>my pages</li>
+                        </a> <br>
+                        <a href="">
+                            <li>friends</li>
+                        </a> <br>
+                        <a href="">
+                            <li>images</li>
+                        </a> <br>
+                        <a href="">
+                            <li>vedios</li>
+                        </a> <br>
+                        <a href="">
+                            <li>messages</li>
+                        </a> <br>
+                        <a href="">
+                            <li>notifications</li>
+                        </a> <br>
+                        <a href="">
+                            <li>people nearby</li>
+                        </a> <br>
+                        <a href="">
+                            <li>insights</li>
+                        </a> <br>
+                        <a href="">
+                            <li>logout</li>
+                        </a> <br>
+                    </ul>
+                </div>
+
+                <div id="al" class="col-md-12"> <br> recent activity
+                    <hr>
+                    <a href="">
+                        <li> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, ipsam non quidem
+                            placeat maiores eaque consectetur magni rerum porro ducimus corporis voluptatum est,
+                            delectus dolor dignissimos nemo nostrum deserunt et.</li>
+                    </a> <br>
+                    <a href="">
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error quibusdam porro commodi
+                            incidunt quas nihil iste eum dolorem, accusamus cum ratione? Adipisci itaque repudiandae
+                            asperiores repellat illum aperiam corrupti veritatis.</li>
+                    </a> <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- middle part  -->
+
+        <div id="middle" class="col-md-6">
+            <!-- heade part -->
+            <div id="centera" class="container">
+                <div id="ca" class="col-md-12">
+                    <img class="rounded-circle" src="bootstrap/template design/bird.jpeg">
+                    <div id="last" class="container">
+                        <textarea id="" cols="50" rows="3"></textarea>
+                        <butto class="btn btn-primary">post</button>
+                    </div>
+                </div>
+
+                <!-- footer part  -->
+                <div id="cb" class="col-md-12">
+
+                    <div id="fa" class="col-md-12">
+                        <img class="rounded-circle" src="bootstrap/template design/bird.jpeg">
+                        <br>
+                        <f>janice Griffith</f> <br>
+                        <e>pubished june 2 2018, 12pm</e>
+                    </div>
+
+
+                    <div id="fb" class="col-md-12">
+                        <img src="Netflix/contentimg/1.jpg">
+                    </div>
+                    <div id="fc" class="col-md-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+                        accusamus ipsam laborum a dicta. Quod soluta placeat blanditiis dolorum ullam. Iure illum,
+                        doloribus doloremque adipisci reiciendis dolores eveniet laudantium commodi expedita. Natus
+                        dicta veniam facilis aliquam aliquid obcaecati deserunt. Ut molestiae animi saepe ipsam debitis
+                        sunt eum tempora dignissimos corrupti?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestias
+                        accusamus ipsam laborum a dicta. Quod soluta placeat blanditiis dolorum ullam. Iure illum,
+                        doloribus doloremque adipisci reiciendis dolores eveniet laudantium commodi expedita. Natus
+                        dicta veniam facilis aliquam aliquid obcaecati deserunt. Ut molestiae animi saepe ipsam debitis
+                        sunt eum tempora dignissimos corrupti?
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- right part -->
+
+        <div id="right" class="col-md-3">
+
+        <h4>your page</h4>
+            <hr>
+            <ul>
+                <li><e>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A cum expedita eum officia laborum minus
+                    qui maxime perspiciatis. Laudantium quaerat, qui mollitia odio aut natus cumque quibusdam beatae
+                    fugit repudiandae</e></li>
+                    <li><e> <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A cum expedita eum officia laborum minus
+                        qui maxime perspiciatis. Laudantium quaerat, qui mollitia odio aut natus cumque quibusdam beatae
+                        fugit repudiandae</e></li><br>
+                        <li><e> <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A cum expedita eum officia laborum minus
+                            qui maxime perspiciatis. Laudantium quaerat, qui mollitia odio aut natus cumque quibusdam beatae
+                            fugit repudiandae</e></li><br>
+                            <li><e> <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A cum expedita eum officia laborum minus
+                                qui maxime perspiciatis. Laudantium quaerat, qui mollitia odio aut natus cumque quibusdam beatae
+                                fugit repudiandae</e></li><br>
+    
+                       
+                
+            </ul>
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

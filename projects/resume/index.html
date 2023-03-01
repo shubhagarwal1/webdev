@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu3</title>
+
+    <style>
+
+        body{  
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("1.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+
+.menudropdown{
+    width: 80%;
+    height: 100px;
+    margin: 0px auto;  
+}
+
+.menudropdown ul{
+  
+
+}
+
+.menudropdown ul li{
+    float: left;
+    background-color: black;
+    color: aliceblue;
+    width: 200px;
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    opacity: 0.6;
+}
+.menudropdown ul li:hover{
+    background-color: #32CD32;
+    opacity: 0.9;
+}
+.menudropdown ul li ul{
+    display: none;
+}
+.menudropdown ul li:hover > ul{
+    display: block;
+}
+.menudropdown ul li ul li {
+    position: relative;
+}
+
+.menudropdown ul li ul li ul {
+    position: absolute;
+    left: 100px;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="menudropdown">
+       <ul id="a">
+        <li id="ii">USA
+            <ul id="inside">
+                <li id="i">NewYorkCity</li>
+                <li id="i">Los Angeles</li>
+                <li id="i">Chicago</li>
+                <li id="i">Houston</li>
+            </ul>
+        </li>
+
+        <li id="ii">India
+            <ul id="inside">
+                <li id="i">pune</li>
+                <li id="i">mumbai</li>
+                <li id="i">dehradun</li>
+                <li id="i">delhi
+                    <ul>
+                        <li>kutub minar</li>
+                        <li>red fort</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li id="ii">france
+            <ul id="inside">
+                <li id="i">pune</li>
+                <li id="i">mumbai</li>
+                <li id="i">dehradun</li>
+                <li id="i">delhi</li>
+            </ul>
+        </li>
+
+        <li id="ii">Australia
+            <ul id="inside">
+                <li id="i">pune</li>
+                <li id="i">mumbai</li>
+                <li id="i">dehradun</li>
+                <li id="i">delhi</li>
+            </ul>
+        </li>
+
+        <li id="ii">Brazil
+            <ul id="inside">
+                <li id="i">pune</li>
+                <li id="i">mumbai</li>
+                <li id="i">dehradun</li>
+                <li id="i">delhi</li>
+            </ul>
+        </li>
+
+       
+
+
+        
+       </ul>
+    </div>
+    
+
+
+
+
+
+
+
+</body>
+</html>

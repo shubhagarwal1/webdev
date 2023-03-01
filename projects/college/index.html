@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .head {
+            height: 35px;
+            background-color: #81062a
+        }
+
+        ul {
+            margin: 0px;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            float: left;
+            padding: 10px;
+            font-size: 10px;
+            text-transform: capitalize;
+        }
+
+        ul li a:hover {
+            color: #54487a
+        }
+
+
+        .logo {
+            margin-top: 1px;
+            height: 180px;
+            background-color: #2d2c3e
+        }
+
+        .left {
+            height: 100%;
+            width: 25%;
+            /* background-color: gray; */
+            float: left;
+        }
+
+        .left img {
+            height: 60%;
+            width: 60%;
+            position: relative;
+            top: 20px;
+            left: 30px;
+
+        }
+
+        .middle {
+            height: 100%;
+            width: 50%;
+            /* background-color: rgb(59, 54, 54); */
+            float: left;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        .middle p {
+            position: relative;
+            top: 40px;
+            font-size: 11px;
+            font-family: sans-serif;
+            color: #41f48f;
+            font-weight: 100;
+        }
+
+        .middle h1 {
+            color: #fff8b2;
+            font-family: sans-serif;
+            font-weight: 400;
+
+        }
+
+        .right {
+            height: 100%;
+            width: 25%;
+            /* background-color: gray; */
+            float: left;
+        }
+
+        .right img {
+            height: 60%;
+            width: 60%;
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+
+        .nav {
+            height: 50px;
+            background-color: white;
+            margin-top: 2px;
+        }
+
+        .nav ul li {
+            float: left;
+            color: black;
+            padding: 15px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+
+        }
+
+        .nav ul li a {
+            color: black;
+            text-decoration: none;
+            position: relative;
+            left: 130px;
+            font-weight: 100;
+            font-size: 17px;
+        }
+
+        .nav ul li a:hover {
+            color: #81062a;
+        }
+
+        .content1 {
+            margin-top: 2px;
+            height: 400px;
+            background-color: white;
+            float: left;
+            text-align: center;
+            color: black;
+            font-family: sans-serif;
+        }
+
+        .content1 p {
+            margin-top: 100px;
+            margin-left: 13px;
+            font-size: 10px;
+        }
+
+        .cleft {
+            height: 100%;
+            width: 60%;
+            /* background-color: black; */
+            margin: 0px;
+            float: left;
+        }
+
+        .cleft img {
+            height: 80%;
+            width: 80%;
+            background-size: cover;
+        }
+
+        .null {
+            height: 300px;
+            background-color: white;
+
+        }
+
+        .content2 {
+            height: 700px;
+            background-color: black;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("about.jpg");
+            background-size: cover;
+            text-align: center;
+            color: aliceblue;
+        }
+       
+      .content2  p{
+            position: relative;
+            top:50px;
+        }
+     .content2   h1{
+            position: relative;
+            top: 60px;
+            text-transform: capitalize;
+
+        }
+
+        .content3{
+            margin-top: 6px;
+            height: 400px;
+            /* background-color: black; */
+            float: left;
+            color: aliceblue;
+            text-align: center;
+           
+        }
+        .content3 h1{
+            text-transform: uppercase;
+            color: black;
+           
+        }
+        .content3 ul li  a{
+            color: black;
+            font-size: 13px;
+            font-family: sans-serif;
+            font-weight: 300;
+            float: none;
+        }
+        .content3 ul li  a:hover{
+            color: #54487a;
+        }
+
+        .content3 .cleft{
+            height: 100%;
+            width: 60%;
+            float: left;
+        }
+        .content3 img{
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .null2 {
+            height: 420px;
+            background-color: white;
+        }
+
+        .footer{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("wood.jpg");
+            background-size: cover;
+            /* text-align: center; */
+            color: aliceblue;
+            height: 400px;  
+        }
+        .footer .left{
+            text-align: center;
+            height: 80%;
+            width: 30%;
+            /* background-color: red; */
+            float: left;
+        }
+        .footer .middle{
+            text-align: center;
+            height: 80%;
+            width: 40%;
+            /* background-color: green; */
+            float: left;
+        }
+        .footer .right{
+            text-align: left;
+            height: 80%;
+            width: 30%;
+            /* background-color: blue; */
+            float: left;
+        }
+        .footer h3{
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+        .footer ul li {
+            text-align: left;
+            list-style: square;
+            font-size: 14px;
+        }
+        .footer .middle img{
+            height: 50%;
+            width: 30%;
+            opacity: 0.75;
+        }
+        .footer .middle img:hover{
+            opacity: 1;
+        }
+
+        .footer .right li{
+            text-align: left;
+            list-style: square;
+            font-size: 14px;
+        }
+
+        .footer .right li a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+         .footer .right li a:hover{
+            color: #2d2c3e;
+         }
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="head">
+        <ul>
+            <li><a href="">Feedback for Faculty & Students to AICTE</a></li>
+            <li><a href="">Extension of Approval</a></li>
+            <li><a href="">staff login</a></li>
+        </ul>
+    </div>
+
+    <!-- logo -->
+    <div class="logo">
+
+        <div class="left">
+            <img src="logo.png">
+        </div>
+
+        <div class="middle">
+            <p>
+                Approved by AICTE, Ministry of HRD, Govt of India and Affiliated to MDU, Rohtak <br> <br>
+            </p>
+            <br>
+            <h1> VAISH COLLEGE OF ENGINEERING</h1>
+        </div>
+
+        <div class="right">
+            <img src="logo.png">
+        </div>
+    </div>
+
+    <!-- menubar -->
+    <div class="nav">
+        <ul id="bar">
+            <li> <a href="">home</a></li>
+            <li> <a href="">about us</a></li>
+            <li> <a href="">departments</a> </li>
+            <li> <a href="">admission</a> </li>
+            <li> <a href="">facilities</a> </li>
+            <li> <a href="">placement</a> </li>
+            <li> <a href="">downloads</a> </li>
+        </ul>
+    </div>
+
+    <!-- content 1 -->
+    <div class="content1">
+
+        <div class="cleft">
+            <img src="2.jpg">
+        </div>
+
+        <p>
+            <marquee behavior="scroll" direction="up">
+
+                Invitation Card of Zonal Youth Festival 2022.
+                Application Form for apply Teaching & Non Teaching Post.
+                Advertisement for the post of Teaching Staff
+                Merit list for physical counselling of MBA admissions 2022-23
+                Link for Register in MBA Admission
+                Notification/Guidelines regarding forthcoming Examination Feb 2022 through online mode
+                Agnipath Yojana Banner
+                All students are informed that AICTE has partnered with UNICEF, Students start by taking a pledge to
+                ensure that
+                they will observe and amplify COVID-appropriate behaviors. the registration link for all students and
+                faculty is
+                <br>
+                Day to Day Schedule of Zonal Youth Festival 2022.
+                Invitation Card of Zonal Youth Festival 2022.
+                Application Form for apply Teaching & Non Teaching Post.
+                Advertisement for the post of Teaching Staff
+                Merit list for physical counselling of MBA admissions 2022-23
+                Link for Register in MBA Admission
+                Notification/Guidelines regarding forthcoming Examination Feb 2022 through online mode
+                Agnipath Yojana Banner
+                All students are informed that AICTE has partnered with UNICEF, Students start by taking a pledge to
+                ensure that
+                they
+            </marquee>
+        </p> Day to Day Schedule of Zonal Youth Festival 2022.
+    </div>
+
+    <!-- null -->
+    <div class="null"></div>
+
+
+    <!-- ABOUT SECTION -->
+    <div class="content2">
+        <h1>About Vaish College of Engineering</h1>
+        <p>
+        The Vaish College of Engg. Affiliated with M.D. University, Rohtak is a premiere institute in the region
+            offering B.Tech, M.Tech, MBA, MCA, BBA, BCA courses within an environment rich in resources. The college
+            established in 1995 is one of the First Self-Financing Colleges of Haryana. The campus is delightfully
+            planned and landscape with impressive buildings, lawns, playgrounds and shaded avenues. It comprises 16.77
+            acres of land which is a part of Vaish Educational Complex spread over an area of 86 acres. Four academic
+            blocks house laboratories, Lecture Halls, Tutorial Rooms, Seminar Halls, Faculty Rooms, Computer Center,
+            Conference Hall, Library, Reading Hall, Medical Room, Training and Placement Office. The Institute also has
+            a cricket stadium, play-grounds, Auditorium etc.   </p>
+            <br><br><br>
+            The BOYS and GIRLS HOSTELS in the campus have sufficient accommodation.
+            <br> <br>
+            Railway Station is in the range of 500 meters from the campus and it is well connected to fast and frequent
+            transport facilities round the clock.
+
+
+        <h1>Vision</h1>
+      <p>
+          To provide quality technical education for the holistic development of the society.
+        </p> 
+
+
+        <h1>mission</h1>
+           <p> To provide quality education by grooming the technical skills/abilities of the students.
+            To improve the overall persona of the students by enabling them to identify their maximum capacity and
+            consequently shape them into the future pioneers.
+            To connect the students with roots of their culture by giving them freedom to spread their wings in the sky
+            of different cultural activities.
+            To make students good human beings, who are always ready to serve society and environment.
+        </p>
+    </div>
+
+<!-- CONTENT 3 -->
+
+    <div class="content3">
+        <div class="cleft">
+            <img src="agnipath.jpg">
+        </div>
+        <h1> weblinks</h1> 
+        <ul>
+           <li><a href="">AICTE</a></li>  <br>
+           <li><a href=""> DELNET</a></li>  <br>
+           <li><a href="">DTE Haryana</a></li> <br>
+           <li><a href="">Grievance Redressal Portal</a></li> <br>
+           <li><a href=""> MDU</a></li> <br>
+           <li><a href="">MOOCS Courses Through Swayam</a></li> <br>
+           <li><a href="">  NPTELUGC</a></li>  <br>
+           <li><a href="">Vaish Education Society</a></li>  <br>
+        </ul>
+    </div>
+
+    <!-- null -->
+    <div class="null2"></div>
+
+<!-- FOOTER -->
+ <div class="footer">
+    
+    <div class="left"><h3>important links</h3> 
+       <ul>
+           <li> <a href=""> Format for Industrial Project Training</a></li> <br>
+           <li><a href="">Industrial Training Letter</a></li>  <br>
+           <li><a href="">BCUBE IT SEVICES LIMITED PLACEMENT DRIVE</a></li> <br>
+            <li><a href="">Results of Ericsson Placement Drive</a></li> <br>
+       </ul>
+    </div>
+
+
+
+    <div class="middle"><h3>download brocher</h3> <br>
+        <a href=""><img src="brocher.jpg"></a>
+
+    </div>
+    <div class="right"><h3>contact us</h3>
+       <li><a href="">Address: Vaish College of Engineering,</a></li> <br>
+       <li><a href="">Vaish Educational Complex,</a></li> <br>
+       <li><a href="">Near Railway Station,</a></li> <br>
+       <li><a href="">Rohtak – 124001, Haryana, INDIA.</a></li> <br>
+       <li><a href="">Tel: +(91) 01262 – 248443</a></li> <br>
+       <li><a href="">Mobile: 9416350597,9416128777,9416291163</a></li> <br>
+       <li><a href="">Email: vcengg1995@gmail.com</a></li> <br>
+       <li><a href="">T&P Cell Email: vceplacementcell@gmail.com</div></a></li> <br>
+       Vaish College of Engineering Copyright © 2023.
+ </div>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <style>
+        #box
+        {
+            background-color: skyblue;
+            border: 1px solid black;
+            height: 600px;
+            width: 60%;
+            margin: auto;
+        }
+        h1{
+            background-color: slateblue;
+            color: aliceblue;
+            text-align: center;
+            margin: 2px;
+        }
+        img
+        {
+            margin: 20px;
+            border-radius: 5px;
+            float: right;
+                
+        }
+        p{
+            margin: 10px;
+            text-align: justify;
+        }
+
+        #ppp
+        {
+            clear: right;
+        }
+
+        #image1
+        {
+            position: absolute;
+            top: 90px;
+            left:400px;
+            opacity: 0.5;
+
+        }
+        #image1:hover{
+            opacity: 1;
+            animation: anim 10s infinite;
+        }
+
+        @keyframes anim
+        {
+            10%
+            {
+                transform: rotate(102deg);
+            }
+            20%
+            {
+                transform: rotate(-102deg);
+            }
+            30%
+            {
+                transform: rotate(102deg);
+            }
+            40%
+            {
+                transform: rotate(-102deg);
+            }
+            50%
+            {
+                transform: rotate(102deg);
+            }
+            60%
+            {
+                transform: rotate(-102deg);
+            }
+
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+       <div id="box">
+            <h1>Resume</h1>
+
+            <img src="images/logo.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi beatae maiores adipisci, similique praesentium repudiandae asperiores ipsa dolorum exercitationem, repellendus quas ullam aut eligendi dolor saepe? Exercitationem excepturi nesciunt voluptate ipsam consectetur soluta? Neque quo architecto sint, laborum quod beatae facere sed excepturi asperi</p>
+            <hr>
+            <p id="ppp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi beatae maiores adipisci, similique praesentium repudiandae asperiores ipsa dolorum exercitationem, repellendus quas ullam aut eligendi dolor saepe? Exercitationem excepturi nesciunt voluptate ipsam consectetur soluta? Neque quo architecto sint, laborum quod beatae facere sed excepturi asperi</p>
+
+
+       </div>
+       <img id="image1" src="images/close.png" alt="">
+</body>
+</html>
